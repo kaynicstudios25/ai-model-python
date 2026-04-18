@@ -1,6 +1,6 @@
 import os
-from dotenv import load_dotenv
-from openai import OpenAI
+from dotenv import load_dotenv 
+from openai import OpenAI 
 
 load_dotenv()  # Load from .env file
 
@@ -11,7 +11,7 @@ client = OpenAI(
 
 messages = [{
     "role": "user", 
-    "content": "Write a one-sentence bedtime story about a mermaid."
+    "content": "Write a one-sentence summary about oddities."
 }]
 
 response = client.chat.completions.create(
